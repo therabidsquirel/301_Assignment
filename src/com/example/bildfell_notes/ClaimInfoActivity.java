@@ -101,18 +101,15 @@ public class ClaimInfoActivity extends ClaimActivity {
         finish();
     }
     
-    // Since the AVD has no email apps installed on it by default, this method
-    // opens up a messaging app on the emulator with all of the claim information
-    // in the message. An email address can be specified as the recipient, allowing
-    // the message to be sent so you can see the information more clearly (the whole
-    // screen as opposed to the little text field). This obviously will not actually
-    // send an email though.
+    // Will get a string that represents all of the information for the specified claim, and
+    // then create an email intent with the string as the body. Will fail if there are no
+    // email apps on the device.
     public void emailClaim(MenuItem menu) {
         String email = TravelClaimController.getEmailText(claim);
         
         // Taken on February 1, 2015 from:
         // https://stackoverflow.com/questions/8284706/send-email-via-gmail
-        Intent i = new Intent(Intent.ACTION_SEND);
+        Intent i = new Intent(Intent.ACTION_SENDTO);
         i.setType("text/plain");
         i.putExtra(Intent.EXTRA_EMAIL, new String[] { "" });
         i.putExtra(Intent.EXTRA_SUBJECT, "");
