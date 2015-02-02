@@ -73,7 +73,7 @@ public class ClaimDate {
         }
         
         // Constraints on year, month, and day.
-        if (year > 2999 || year < 1000 || month > 12 || month < 1 || day > 31 || day < 1) {
+        if (year > 2199 || year < 1900 || month > 12 || month < 1 || day > 31 || day < 1) {
             return true;
         } else if (day > 30 && (month == 4 || month == 6 || month == 9 || month == 11)) {
             return true;
