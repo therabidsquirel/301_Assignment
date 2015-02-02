@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.bildfell_notes.ExpenseInfoActivity" >
+    <item android:id="@+id/editExpense" android:orderInCategory="100" android:title="@string/expenseEdit" android:onClick="editExpense"></item>
+    <item android:id="@+id/deleteExpense" android:orderInCategory="200" android:title="@string/expenseDelete" android:onClick="deleteExpense"></item>
+
+</menu>

@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bildfell_notes.EditClaimActivity" >
+
+    <Button
+        android:id="@+id/claimSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/invisibleClaimCenter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onSave"
+        android:text="@string/saveButton" />
+
+    <Button
+        android:id="@+id/claimCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/invisibleClaimCenter"
+        android:onClick="onCancel"
+        android:text="@string/cancelButton" />
+
+    <TextView
+        android:id="@+id/invisibleClaimCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/claimNamePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/promptName"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <EditText
+        android:id="@+id/claimNameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/claimNamePrompt"
+        android:ems="10"
+        android:hint="@string/nameHint"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:maxLength="32" />
+
+    <TextView
+        android:id="@+id/statusPrompt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/claimNameField"
+        android:text="@string/claimPromptStatus1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <TextView
+        android:id="@+id/statusPrompt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/statusPrompt1"
+        android:text="@string/claimPromptStatus2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <EditText
+        android:id="@+id/statusField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/statusPrompt2"
+        android:ems="10"
+        android:hint="@string/presetHint"
+        android:inputType="textCapWords"
+        android:lines="1"
+        android:maxLength="11" />
+
+    <TextView
+        android:id="@+id/startDatePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/statusField"
+        android:text="@string/claimPromptStartDate"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <EditText
+        android:id="@+id/startDateField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/startDatePrompt"
+        android:ems="10"
+        android:hint="@string/dateHint"
+        android:inputType="date"
+        android:lines="1"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/endDatePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/startDateField"
+        android:text="@string/claimPromptEndDate"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <EditText
+        android:id="@+id/endDateField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/endDatePrompt"
+        android:ems="10"
+        android:hint="@string/dateHint"
+        android:inputType="date"
+        android:lines="1"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/claimDescriptionPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/endDateField"
+        android:text="@string/promptDescription"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <EditText
+        android:id="@+id/claimDescriptionField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/claimSaveButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/claimDescriptionPrompt"
+        android:ems="10"
+        android:hint="@string/textHint"
+        android:inputType="textMultiLine"
+        android:maxLength="200" />
+
+</RelativeLayout>

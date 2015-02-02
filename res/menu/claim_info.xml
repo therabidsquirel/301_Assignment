@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.bildfell_notes.ClaimInfoActivity" >
+    <item android:id="@+id/editClaim" android:orderInCategory="100" android:title="@string/claimEdit" android:onClick="editClaim"></item>
+    <item android:id="@+id/deleteClaim" android:orderInCategory="200" android:title="@string/claimDelete" android:onClick="deleteClaim"></item>
+    <item android:id="@+id/emailClaim" android:orderInCategory="300" android:title="@string/claimEmail" android:onClick="emailClaim"></item>
+
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">bildfell-notes</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_claim_info">Claim Information</string>
+    <string name="title_activity_expense_info">Expense Information</string>
+    <string name="title_activity_edit_claim">Edit Claim</string>
+    <string name="title_activity_add_claim">Add Claim</string>
+    <string name="title_activity_edit_expense">Edit Expense</string>
+    <string name="title_activity_add_expense">Add Expense</string>
+    <string name="claimsPrompt">All claims in decreasing order by start date:</string>
+    <string name="addClaimButton">Add Claim</string>
+    <string name="claimAttributes">Claim Information</string>
+    <string name="expensesPrompt">All expenses in decreasing order by date:</string>
+    <string name="addExpenseButton">Add Expense</string>
+    <string name="expenseAttributes">Expense Information</string>
+    <string name="saveButton">Save</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="nameHint">Name</string>
+    <string name="dateHint">yyyy/mm/dd</string>
+    <string name="textHint">Text</string>
+    <string name="presetHint">One of above</string>
+    <string name="numberHint">Number</string>
+    <string name="promptName">Enter a name (32 character max):</string>
+    <string name="promptDescription">Enter a description (200 character max):</string>
+    <string name="claimPromptStatus1">Enter status of claim:</string>
+    <string name="claimPromptStatus2">(In Progress, Submitted, Returned, Approved)</string>
+    <string name="claimPromptStartDate">Enter start date of claim (yyyy/mm/dd):</string>
+    <string name="claimPromptEndDate">Enter end date of claim (yyyy/mm/dd):</string>
+    <string name="expPromptCategory">Enter a category (32 character max):</string>
+    <string name="expPromptDate">Enter date of expense (yyyy/mm/dd):</string>
+    <string name="expPromptCurrency1">Enter currency:</string>
+    <string name="expPromptCurrency2">(CAD, USD, EUR, GBP)</string>
+    <string name="expPromptAmount">Enter amount:</string>
+    <string name="claimEdit">Edit Claim</string>
+    <string name="claimDelete">Delete Claim</string>
+    <string name="claimEmail">Email Claim</string>
+    <string name="expenseEdit">Edit Expense</string>
+    <string name="expenseDelete">Delete Expense</string>
+
+</resources>

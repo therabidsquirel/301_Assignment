@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bildfell_notes.EditExpenseActivity" >
+
+    <Button
+        android:id="@+id/expSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/invisibleExpCenter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onSave"
+        android:text="@string/saveButton" />
+
+    <Button
+        android:id="@+id/expCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/invisibleExpCenter"
+        android:onClick="onCancel"
+        android:text="@string/cancelButton" />
+
+    <TextView
+        android:id="@+id/invisibleExpCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/expNamePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/promptName"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <EditText
+        android:id="@+id/expNameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expNamePrompt"
+        android:ems="10"
+        android:hint="@string/nameHint"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:maxLength="32" />
+
+    <TextView
+        android:id="@+id/categoryPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expNameField"
+        android:text="@string/expPromptCategory"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <EditText
+        android:id="@+id/categoryField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/categoryPrompt"
+        android:ems="10"
+        android:hint="@string/textHint"
+        android:inputType="textCapWords"
+        android:lines="1"
+        android:maxLength="32" />
+
+    <TextView
+        android:id="@+id/datePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/categoryField"
+        android:text="@string/expPromptDate"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <EditText
+        android:id="@+id/dateField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/datePrompt"
+        android:ems="10"
+        android:hint="@string/dateHint"
+        android:inputType="date"
+        android:lines="1"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/currencyPrompt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dateField"
+        android:text="@string/expPromptCurrency1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <TextView
+        android:id="@+id/currencyPrompt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/currencyPrompt1"
+        android:text="@string/expPromptCurrency2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <TextView
+        android:id="@+id/amountPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/invisibleExpCenter"
+        android:layout_below="@+id/currencyPrompt1"
+        android:text="@string/expPromptAmount"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <EditText
+        android:id="@+id/currencyField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/invisibleExpCenter"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/currencyPrompt2"
+        android:ems="10"
+        android:hint="@string/presetHint"
+        android:inputType="textCapCharacters"
+        android:lines="1"
+        android:maxLength="3" />
+
+    <EditText
+        android:id="@+id/amountField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/invisibleExpCenter"
+        android:layout_below="@+id/currencyPrompt2"
+        android:ems="10"
+        android:hint="@string/numberHint"
+        android:inputType="numberSigned|numberDecimal"
+        android:lines="1"
+        android:maxLength="16" />
+
+    <TextView
+        android:id="@+id/expDescriptionPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/amountField"
+        android:text="@string/promptDescription"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <EditText
+        android:id="@+id/expDescriptionField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/expSaveButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expDescriptionPrompt"
+        android:ems="10"
+        android:hint="@string/textHint"
+        android:inputType="textMultiLine"
+        android:maxLength="200" />
+
+</RelativeLayout>
